@@ -6,13 +6,17 @@ namespace FindMaximumNumber
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Find max Number");
+            Console.WriteLine("Finding max Number :");
             
-            int output = MaximumNumberCheck.MaximumIntegerNumber(23, 43, 65);
-            Console.WriteLine(output);
+            string maximum = MaximumNumberCheck.FindMaximum<int>(29, 76, 94);
+            string maximum1 = MaximumNumberCheck.FindMaximum<float>(231.2f,112.45f,32.56f);
+            string maximum2 = MaximumNumberCheck.FindMaximum<string>("202", "323", "441");
+
+            Console.WriteLine(maximum);
+            Console.WriteLine(maximum1);
+            Console.WriteLine(maximum2);
             
-            double doubleoutput = MaximumNumberCheck.MaximumFloatNumber(111.2, 22.45, 78.56);
-            Console.WriteLine(doubleoutput);
+            
         }
     }
 }
